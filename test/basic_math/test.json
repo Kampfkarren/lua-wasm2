@@ -1,0 +1,182 @@
+[
+  {
+    "name": "preramble",
+    "magic": [
+      0,
+      97,
+      115,
+      109
+    ],
+    "version": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "type",
+    "entries": [
+      {
+        "form": "func",
+        "params": [
+          "i32"
+        ],
+        "return_type": "i32"
+      }
+    ]
+  },
+  {
+    "name": "function",
+    "entries": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "table",
+    "entries": [
+      {
+        "elementType": "anyFunc",
+        "limits": {
+          "flags": 0,
+          "intial": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "memory",
+    "entries": [
+      {
+        "flags": 0,
+        "intial": 1
+      }
+    ]
+  },
+  {
+    "name": "global",
+    "entries": []
+  },
+  {
+    "name": "export",
+    "entries": [
+      {
+        "field_str": "memory",
+        "kind": "memory",
+        "index": 0
+      },
+      {
+        "field_str": "add",
+        "kind": "function",
+        "index": 0
+      },
+      {
+        "field_str": "sub",
+        "kind": "function",
+        "index": 1
+      },
+      {
+        "field_str": "mul",
+        "kind": "function",
+        "index": 2
+      },
+      {
+        "field_str": "div",
+        "kind": "function",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "name": "code",
+    "entries": [
+      {
+        "locals": [],
+        "code": [
+          {
+            "name": "get_local",
+            "immediates": "0"
+          },
+          {
+            "return_type": "i32",
+            "name": "const",
+            "immediates": "10"
+          },
+          {
+            "return_type": "i32",
+            "name": "add"
+          },
+          {
+            "name": "end"
+          }
+        ]
+      },
+      {
+        "locals": [],
+        "code": [
+          {
+            "return_type": "i32",
+            "name": "const",
+            "immediates": "10"
+          },
+          {
+            "name": "get_local",
+            "immediates": "0"
+          },
+          {
+            "return_type": "i32",
+            "name": "sub"
+          },
+          {
+            "name": "end"
+          }
+        ]
+      },
+      {
+        "locals": [],
+        "code": [
+          {
+            "name": "get_local",
+            "immediates": "0"
+          },
+          {
+            "return_type": "i32",
+            "name": "const",
+            "immediates": "10"
+          },
+          {
+            "return_type": "i32",
+            "name": "mul"
+          },
+          {
+            "name": "end"
+          }
+        ]
+      },
+      {
+        "locals": [],
+        "code": [
+          {
+            "name": "get_local",
+            "immediates": "0"
+          },
+          {
+            "return_type": "i32",
+            "name": "const",
+            "immediates": "2"
+          },
+          {
+            "return_type": "i32",
+            "name": "div_s"
+          },
+          {
+            "name": "end"
+          }
+        ]
+      }
+    ]
+  }
+]

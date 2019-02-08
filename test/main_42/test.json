@@ -1,0 +1,91 @@
+[
+  {
+    "name": "preramble",
+    "magic": [
+      0,
+      97,
+      115,
+      109
+    ],
+    "version": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "type",
+    "entries": [
+      {
+        "form": "func",
+        "params": [],
+        "return_type": "i32"
+      }
+    ]
+  },
+  {
+    "name": "function",
+    "entries": [
+      0
+    ]
+  },
+  {
+    "name": "table",
+    "entries": [
+      {
+        "elementType": "anyFunc",
+        "limits": {
+          "flags": 0,
+          "intial": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "memory",
+    "entries": [
+      {
+        "flags": 0,
+        "intial": 1
+      }
+    ]
+  },
+  {
+    "name": "global",
+    "entries": []
+  },
+  {
+    "name": "export",
+    "entries": [
+      {
+        "field_str": "memory",
+        "kind": "memory",
+        "index": 0
+      },
+      {
+        "field_str": "main",
+        "kind": "function",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "name": "code",
+    "entries": [
+      {
+        "locals": [],
+        "code": [
+          {
+            "return_type": "i32",
+            "name": "const",
+            "immediates": "42"
+          },
+          {
+            "name": "end"
+          }
+        ]
+      }
+    ]
+  }
+]
